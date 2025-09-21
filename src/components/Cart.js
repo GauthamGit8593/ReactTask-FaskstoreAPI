@@ -10,7 +10,7 @@ function Cart({ cart, onClose, onRemoveFromCart }) {
           <div>
             {cart.map(product => (
               <div className="cart-item" key={product.id}>
-                <img src={product.image} className="cart-image" />
+                <img src={product.image} className="cart-image" alt="" />
                 <div className="cart-info">
                   <h2>{product.title}</h2>
                   <p>${product.price}</p>
